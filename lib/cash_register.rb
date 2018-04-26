@@ -14,7 +14,7 @@ class CashRegister
     q.times do
       self.item_list << title
       self.total += price
-      void_previous = price
+      self.void_previous = price
     end
   end
 
@@ -30,7 +30,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.total -=self.last_total
+    self.total -=self.void_previous
   end
 
 
