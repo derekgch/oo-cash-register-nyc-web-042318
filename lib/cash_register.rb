@@ -5,9 +5,9 @@ class CashRegister
 
   def initialize(dis=1)
     @total = 0
-    discount = dis
-    
+    @discount = dis
+
   end
-  
+
 
 end
