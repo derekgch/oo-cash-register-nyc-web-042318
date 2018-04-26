@@ -14,6 +14,7 @@ class CashRegister
     q.times do
       self.item_list << title
       self.total += price
+      void_previous = price
     end
   end
 
